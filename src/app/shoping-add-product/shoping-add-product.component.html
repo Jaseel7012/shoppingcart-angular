@@ -4,29 +4,29 @@
             <div class="row g-3 mt-3">
                 <div class="col col-12 col-sm-12 col-lg-12 col-md-12 col-xxl-12 col-xl-12">
                     <label for="" class="form-label">Product Image</label>
-                    <input type="text" class="form-control">
+                    <input name="pimage" [(ngModel)]="pimage" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-lg-12 col-md-12 col-xxl-12 col-xl-12">
                     <label for="" class="form-label">Discription</label>
-                    <input type="text" class="form-control">
+                    <input name="disc" [(ngModel)]="disc" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-lg-12 col-md-12 col-xxl-12 col-xl-12">
                     <label for="" class="form-label">Price</label>
-                    <input type="text" class="form-control">
+                    <input name="price" [(ngModel)]="price" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-lg-12 col-md-12 col-xxl-12 col-xl-12">
                     <label for="" class="form-label">Seller Name</label>
-                    <input type="text" class="form-control">
+                    <input name="sname" [(ngModel)]="sname" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-lg-12 col-md-12 col-xxl-12 col-xl-12">
                     <label for="" class="form-label">Quantity</label>
-                    <input type="text" class="form-control">
+                    <input name="q" [(ngModel)]="q" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-lg-12 col-md-12 col-xxl-12 col-xl-12">
                     <!-- <br> -->
                 </div>
                 <div class="col col-12 col-sm-12 col-lg-12 col-md-12 col-xxl-12 col-xl-12 text-center mt-4">
-                    <button class="btn btn-success">Add</button></div>
+                    <button class="btn btn-success"  (click)="view()">Add</button></div>
             </div>
         </div>
     </div>
