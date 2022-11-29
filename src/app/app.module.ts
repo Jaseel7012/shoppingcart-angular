@@ -8,6 +8,8 @@ import { ShopCartViewComponent } from './shop-cart-view/shop-cart-view.component
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { ViewliveComponent } from './viewlive/viewlive.component';
+import {HttpClientModule} from '@angular/common/http'
 const myroute:Routes=
 [
   {path:'',
@@ -16,6 +18,10 @@ const myroute:Routes=
 {
   path:'view',
   'component':ShopCartViewComponent
+},
+{
+  path:'view2',
+  'component':ViewliveComponent
 }
 ]
 @NgModule({
@@ -23,13 +29,15 @@ const myroute:Routes=
     AppComponent,
     ShopingAddProductComponent,
     ShopCartViewComponent,
-    NavbarComponent
+    NavbarComponent,
+    ViewliveComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myroute),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

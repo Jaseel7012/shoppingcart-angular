@@ -12,14 +12,14 @@ export class ShopingAddProductComponent {
   disc=""
   price=""
   sname=""
-  q=""
+  qu=""
   view=()=>{
     let data:any={
       'pimage':this.pimage,
       'disc':this.disc,
       'price':this.price,
       'sname':this.sname,
-      'q':this.q
+      'qu':this.qu
     }
     console.log(data)
   }
